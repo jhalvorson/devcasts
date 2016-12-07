@@ -1,0 +1,65 @@
+
+@font-face {
+    font-family: 'bold';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/553128/montserrat-bold-webfont.woff2') format('woff2'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/553128/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'light';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/553128/montserrat-light-webfont.woff2') format('woff2'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/553128/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'medium';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/553128/montserrat-medium-webfont.woff2') format('woff2'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/553128/montserrat-medium-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/553128/montserrat-regular-webfont.woff2') format('woff2'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/553128/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'semibold';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/553128/montserrat-regular-webfont.woff2') format('woff2'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/553128/montserrat-regular-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  font-family: 'regular', sans-serif;
+  background-color:#f9f9f9;
+  padding: 40px;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'light', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
