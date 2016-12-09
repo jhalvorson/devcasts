@@ -6,13 +6,7 @@ class Header extends Component {
     render() {
         return (
             <nav className="navigation">
-                <Link to="/githubId/faves" className="button button-faves">
-                    <FontAwesome
-                        name='heart'
-                        size='2x'
-                      />
-                  ❤️
-                </Link>
+                
             </nav>
         )
     }

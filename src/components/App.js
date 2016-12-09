@@ -21,21 +21,26 @@ class App extends Component {
             podcasts: data
         })
     }
+    componentDidMount() {
+
+    }
     render() {
         return (
           <div className="dev-casts">
                 <HomeHeader />
-                <div className="card-list">
-                {
-                    Object
-                    .keys(this.state.podcasts)
-                    .map(key => <Card
-                                    key={key}
-                                    index={key}
-                                    details={this.state.podcasts[key]}
-                                    slug={this.props.params.slug}
-                                    />)
-                }
+                <div className="card-list" id="card-list">
+                    <div className="card-list__content">
+                        {
+                            Object
+                            .keys(this.state.podcasts)
+                            .map(key => <Card
+                                            key={key}
+                                            index={key}
+                                            details={this.state.podcasts[key]}
+                                            slug={this.props.params.slug}
+                                            />)
+                        }
+                    </div>
                 </div>
           </div>
         );

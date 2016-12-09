@@ -4,7 +4,7 @@ class HomeHeader extends Component{
     render() {
         return <header className="header">
 
-            <h1 className="heading--one">Curated collection of podcasts for badass developers
+            <h1 className="heading--one">A curated collection of podcasts for badass developers
 &amp; freelancers looking to learn their shit.</h1>
 
         </header>

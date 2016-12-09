@@ -1,12 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter, Match, Miss } from 'react-router';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter, Match, Miss } from 'react-router'
 
-import App from './components/App';
-import Podcast from './components/Podcast';
-import NotFound from './components/NotFound';
-import Faves from './components/Faves';
-import Header from './components/Header';
+
+import App from './components/App'
+import Podcast from './components/Podcast'
+import NotFound from './components/NotFound'
+import Faves from './components/Faves'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 import './css/index.css';
 
@@ -19,6 +21,7 @@ const Root = () => {
                 <Match pattern="/podcast/:slug" component={Podcast} />
                 <Match pattern="/githubId/faves" component={Faves} />
                 <Miss component={NotFound} />
+                <Footer />
             </div>
         </BrowserRouter>
     )
