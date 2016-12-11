@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../images/logo.svg';
 import '../css/App.css';
-import data from '../dummy-data';
 
 //components
 
@@ -9,10 +8,6 @@ import HomeHeader from './HomeHeader';
 import Card from './Card';
 
 class App extends Component {
-
-    componentDidMount() {
-
-    }
     render() {
         return (
           <div className="dev-casts">
@@ -26,7 +21,6 @@ class App extends Component {
                                                 key={key}
                                                 index={key}
                                                 details={this.props.podcasts[key]}
-                                                slug={this.props.params.slug}
                                                 />)
                             }
                         </div>
