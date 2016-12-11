@@ -1,4 +1,4 @@
-const data = [
+const podcasts = [
     {
         slug: 'shop-talk-show',
         name: 'Shop Talk Show',
@@ -32,4 +32,4 @@ const data = [
     }
 ]
 
-export default data
+export default podcasts
