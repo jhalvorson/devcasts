@@ -1,8 +1,23 @@
-import React, { Component } from 'react';
-import HomeHeader from './HomeHeader';
-import PodcastOverview from './PodcastOverview';
+import React, { Component } from 'react'
+import HomeHeader from './HomeHeader'
+import PodcastOverview from './PodcastOverview'
+import shopTalkData from '../shop-talk-data'
 
 class Podcast extends Component {
+
+    constructor() {
+        super();
+
+        this.state = {
+            episodes: []
+        }
+    }
+    componentWillMount() {
+        this.setState({
+            episodes: shopTalkData
+        })
+    }
+
     render() {
         const { slug } = this.props.params;
         // index of the post
@@ -11,7 +26,7 @@ class Podcast extends Component {
         return (
             <div>
                 <HomeHeader />
-                <PodcastOverview i={i} podcast={podcast} {...this.props}/>
+                <PodcastOverview i={i} episodes={this.state.episodes} podcast={podcast} {...this.props}/>
             </div>
         )
     }
