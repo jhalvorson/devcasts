@@ -1,20 +1,29 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import FontAwesome from 'react-fontawesome'
 
 class Footer extends Component {
     render() {
         return (
-            <footer className="footer">
+            <footer className="footer clearfix">
                 <div className="column one">
-                    <p>Made by @JamieHalvorson, <br />a Front End Developer at @cellosignal</p>
+                    <p>By <a href="//twitter.com/jamiehalvorson" target="_blank">@JamieHalvorson</a>, <br />Front End Developer at <a href="//twitter.com/cellosignal" target="_blank">@cellosignal</a></p>
                 </div>
                 <div className="column two">
                     <p>
-                    Missing some shit-hot podcast? <br />Hit me up on Twitter.
+                    {this.props.col_two}
                     </p>
                 </div>
                 <div className="column three">
-                    <p>View on GitHub</p>
-                    <p>I wrote a thing on how I made this</p>
+                    <p>
+                        <a href="//github.com/jhalvorson/devcasts" target="_blank">
+                        View on GitHub
+                        <FontAwesome
+                            className=''
+                            name='github'
+                            size='2x'
+                          />
+                        </a>
+                    </p>
                 </div>
             </footer>
         )

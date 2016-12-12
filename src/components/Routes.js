@@ -31,11 +31,11 @@ class Routes extends Component {
         return (
             <BrowserRouter>
                 <div>
-                    <Header />
                     <Match exactly pattern="/" render={(props) => <App {...props} podcasts={this.state.podcasts} />}/>
                     <Match pattern="/podcast/:slug" render={(props) => <Podcast {...props} podcasts={this.state.podcasts} />} />
                     <Match pattern="/githubId/faves" component={Faves} />
-                    <Footer />
+                    <Miss component={NotFound} />
+                    <Footer col_one="" col_two="This is a test"/>
                 </div>
             </BrowserRouter>
         )

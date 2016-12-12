@@ -1,28 +1,17 @@
-import React, { Component } from 'react';
-import logo from '../images/logo.svg';
-import '../css/App.css';
+import React, { Component } from 'react'
+import '../css/App.css'
 
-//components
-
-import HomeHeader from './HomeHeader';
-import Card from './Card';
+import HomeHeader from './HomeHeader'
+import CardList from './CardList'
 
 class App extends Component {
     render() {
         return (
-          <div className="dev-casts">
+          <div className="dev-casts clearfix">
                 <HomeHeader />
                     <div className="card-list" id="card-list">
                         <div className="card-list__content">
-                            {
-                                Object
-                                .keys(this.props.podcasts)
-                                .map(key => <Card
-                                                key={key}
-                                                index={key}
-                                                details={this.props.podcasts[key]}
-                                                />)
-                            }
+                            <CardList {...this.props} />
                         </div>
                     </div>
           </div>
@@ -31,20 +20,3 @@ class App extends Component {
 }
 
 export default App;
-
-/*
-<div className="card-list" id="card-list">
-    <div className="card-list__content">
-        {
-            Object
-            .keys(this.props.podcasts)
-            .map(key => <Card
-                            key={key}
-                            index={key}
-                            details={this.props.podcasts[key]}
-                            slug={this.props.params.slug}
-                            />)
-        }
-    </div>
-</div>
-*/

@@ -108,16 +108,16 @@
 }
 
 .card-list {
-    overflow: hidden;
-    float:right;
+    /*overflow: hidden;
+    float:right;*/
     max-width: 100%;
-    padding-left: 20%;
+    /*padding-left: 20%;*/
 }
 
 .card-list__content {
     width:100%;
    position:relative;
-   white-space:nowrap;
+   /*white-space:nowrap;*/
 }
 
 
@@ -160,10 +160,37 @@
 }
 
 
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
 
 /* footer */
 
 .footer {
     display: flex;
     width:100%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color:#f4f4f4;
+    margin-top:100px;
+}
+
+.footer .column {
+    padding: 30px;
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.not-found {
+    padding: 100px;
+    text-align: center;
 }
