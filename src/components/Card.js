@@ -17,7 +17,9 @@ class CardBody extends Component {
       <section className="card-body">
         <h2>{this.props.name}</h2>
         <p>{this.props.description}</p>
-        <Link to={`/podcast/${this.props.slug}`}>Listen to {this.props.name}</Link>
+        <div className="card-listen">
+          <Link to={`/podcast/${this.props.slug}`}>Listen to {this.props.name}</Link>          
+        </div>
       </section>
     )
   }

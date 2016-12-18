@@ -6,7 +6,7 @@ class Header extends Component {
     render() {
         return (
             <nav className="navigation">
-                
+                <Link to="/">Back</Link>
             </nav>
         )
     }

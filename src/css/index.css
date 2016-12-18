@@ -1,5 +1,5 @@
 
-@font-face {
+/*@font-face {
     font-family: 'bold';
     src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/553128/montserrat-bold-webfont.woff2') format('woff2'),
          url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/553128/montserrat-bold-webfont.woff') format('woff');
@@ -42,10 +42,10 @@
     font-weight: normal;
     font-style: normal;
 
-}
+}*/
 
 body {
-  font-family: 'regular', sans-serif;
+  font-family: 'Inconsolata', monospace;
   background-color:#f9f9f9;
   padding: 40px;
   font-size: 16px;
@@ -55,9 +55,9 @@ body {
 }
 
 p {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
-  font-family: 'light', sans-serif;
+  font-family: 'Inconsolata', monospace;
 }
 
 h1, h2, h3, h4, h5, h6 {

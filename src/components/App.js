@@ -5,15 +5,15 @@ import HomeHeader from './HomeHeader'
 import CardList from './CardList'
 
 class App extends Component {
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     render() {
         return (
           <div className="dev-casts clearfix">
                 <HomeHeader />
-                    <div className="card-list" id="card-list">
-                        <div className="card-list__content">
-                            <CardList {...this.props} />
-                        </div>
-                    </div>
+                <CardList {...this.props} />
           </div>
         );
     }
